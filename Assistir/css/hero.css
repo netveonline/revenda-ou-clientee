@@ -1,0 +1,135 @@
+.heroContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+
+    z-index: 2;
+}
+
+.heroTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroLogo {
+    width: 150px;
+}
+
+.heroButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    background: #0099ff;
+    padding: 12px 20px;
+    border-radius: .5rem;
+
+    transition: opacity 320ms ease-in-out;
+}
+
+.heroButton:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.heroMain {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.heroTitle {
+    font-size: 55px;
+    text-align: center;
+}
+
+.heroText {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.heroFormContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heroInput {
+    background-color: white;
+    width: 420px;
+    height: 60px;
+    padding: 0 25px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: border 320ms ease-in-out;
+}
+
+.heroInput:focus {
+    border-color: #ff7f50;
+}
+
+.heroFormButton {
+    width: 180px;
+    height: 60px;
+    background-color: #0099ff;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: opacity 320ms ease-in-out;
+}
+
+.heroFormButton:hover {
+    opacity: .5;
+}
+
+.heroImage {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    opacity: .8;
+    background:  #00000099 url("Design\ sem\ nome.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+@media only screen and (max-width: 428px) {
+    .heroContainer {
+        padding: 1rem;
+        gap: 5rem;
+    }
+
+    .heroFormContainer {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .heroInput {
+        width: 95%;
+    }
+
+    .heroTitle {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .heroText {
+        font-size: 18px;
+    }
+}

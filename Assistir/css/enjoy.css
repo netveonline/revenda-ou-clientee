@@ -1,0 +1,200 @@
+.enjoyTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+.enjoyTextContainer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 600px;
+}
+
+.enjoyTitle {
+    font-size: 38px;
+}
+
+.enjoyText {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.enjoyVideoContainer {
+    width: 465px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.enjoyVideoContainer2 {
+    width: 465px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.enjoyVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.enjoyImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.enjoyImg2 {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.enjoyVideo2 {
+    position: absolute;
+    top: 55px;
+    left: 105px;
+    z-index: 1;
+    width: 65%;
+}
+
+.enjoyGifContainer {
+    width: 290px;
+    height: 100px;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, .25);
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 14px;
+    position: absolute;
+    left: 137px;
+    bottom: 12px;
+}
+
+.enjoyGifContainer span {
+    font-size: 12px;
+}
+
+.enjoyGifContainer a {
+    color: blue;
+}
+
+.enjoyGifContainer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.enjoyGifContainer img {
+    width: 50px;
+}
+
+.enjoyGifColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+img {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1440px) {
+    img {
+        width: 100%;
+    }
+
+    .enjoyVideo2 {
+        top: 25px;
+        left: 60px;
+        width: 65%;
+    }
+
+    .enjoyTextContainer {
+        width: 100%;
+    }
+    
+    .enjoyGifContainer {
+        left: 20px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .enjoyTitle {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .enjoyVideo2 {
+        top: 35px;
+        left: 120px;
+        width: 62%;
+    }
+
+    .enjoyGifContainer {
+        left: 170px;
+        height: 80px;
+    }
+
+    .enjoyTitle, .enjoyTextContainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .enjoyTitle {
+        font-size: 32px;
+    }
+
+    .enjoyTextContainer {
+        width: 100%;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .enjoyText {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .enjoyVideo2 {
+        top: 25px;
+        left: 80px;
+        width: 60%;
+    }
+    
+    .enjoyGifContainer {
+        left: 50px;
+        height: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .enjoyVideo2 {
+        left: 58px;
+        width: 60%;
+    }
+
+    .enjoyGifContainer {
+        left: 10px;
+        height: 70px;
+    }
+}

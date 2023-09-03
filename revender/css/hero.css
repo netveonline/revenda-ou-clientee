@@ -1,0 +1,156 @@
+.heroText {
+    width: 50%;
+    height: 100%;
+    background: #00040e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroImage {
+    width: 50%;
+    height: 100%;
+    background: #aaa url('background2.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 0.5rem;
+}
+
+.heroTitle {
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 20px;
+    margin-top: 32px;
+}
+
+.heroTitleColor, .heroTextsColor {
+    color: #F89C0B;
+}
+
+.heroTexts {
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 20px;
+    color: white;
+    margin-top: 32px;
+    text-align: left;
+}
+
+.heroCTA {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 480px;
+    padding: 0 20px;
+    margin: 32px 0;
+}
+
+.heroCTABtn {
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 240px;
+    color: white;
+    border-radius: 2rem;
+    transition: opacity 320ms ease-out;
+}
+
+.heroCTASecondary {
+    padding: 20px;
+    background: #009FDB;
+    width: 240px;
+    color: white;
+    border-radius: 2rem;
+    text-align: center;
+    transition: opacity 320ms ease-out;
+}
+
+.heroCTABtn:hover, .heroCTASecondary:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.heroChannelsTitle {   
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.heroChannels {
+    width: 80%;
+}
+
+@media only screen and (max-width: 1920px) {
+    .heroChannels img {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .heroChannels {
+        padding: 0 1rem;
+    }
+
+    .heroChannels, .heroChannels img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .heroText, .heroImage {
+        width: 100%;
+    }
+
+    .heroCTA {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .heroTitle, .heroTexts {
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .heroTitle {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .heroCTA, .heroTexts, .heroTitle, .heroChannelsTitle {
+        width: 100%;
+    }
+
+    .heroTitle, .heroChannelsTitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .heroTexts {
+        padding: 0 1rem;
+    }
+
+    .heroCTA {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroChannels {
+        padding: 0 1rem;
+    }
+
+    .heroChannels, .heroChannels img {
+        width: 100%;
+    }
+}

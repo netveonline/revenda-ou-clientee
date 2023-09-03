@@ -1,0 +1,115 @@
+.plansRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planCard {
+    background: #333333;
+    border: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    width: 290px;
+    height: 500px;
+
+    border-radius: 2.5rem;
+    padding: 20px;
+
+    margin: 64px 0;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .planCard {
+        width: 250px;
+        height: 440px;
+    }
+}
+
+.plansH1 {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.planCardTitle {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.planCardDots {
+    color: #009FDB;
+    letter-spacing: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.planCard small, span {
+    text-align: center;
+    color: white;
+}
+
+.planCard small {
+    font-weight: bold;
+}
+
+.planCardPrice {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.planCardPrice small {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.planCardColor {
+    color: #009FDB;
+}
+
+.planCard a {
+    outline: none;
+    border: none;
+    background: #009FDB;
+    color: white;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    transition: opacity 320ms ease-in-out;
+    margin-top: 20px;
+}
+
+.planCard a:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.planTextAlign {
+    text-align: center;
+}
+
+.planTextAlignColumn {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-weight: 200;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 830px) {
+    .plansRow {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

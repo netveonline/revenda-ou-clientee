@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+h1, span, p {
+    user-select: none;
+    color: white;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+hr {
+    background: #303030;
+    height: 8px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: .5rem;
+
+    position: fixed;
+    z-index: 999;
+
+    opacity: .7;
+}
+
+.hero {
+    width: 100%;
+    height: 800px;
+    margin-top: 60px;
+}
+
+.vant {
+    width: 100%;
+    min-height: 400px;
+    background: #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.enjoy {
+    width: 60%;
+    margin: 0 auto;
+    min-height: 500px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+.channels {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background: #000;
+}
+
+.channels img {
+    width: 100%;
+}
+
+.plans {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.packages {
+    width: 45%;
+    min-height: 400px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.questions {
+    width: 100%;
+    min-height: 900px;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 1rem;
+}
+
+.footer a {
+    color: gray;
+    font-size: 16px;
+}
+
+.icon {
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 320ms ease-in-out;
+}
+
+.icon:hover {
+    opacity: .5;
+}
+
+.icon img {
+    width: 50px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .packages {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .enjoy {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vant {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 1rem 0;
+    }
+
+    .enjoy {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: .5rem 0;
+    }
+
+    .packages {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .header {
+        flex-direction: column;
+        height: 80px;
+    }
+}

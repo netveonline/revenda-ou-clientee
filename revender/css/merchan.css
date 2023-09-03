@@ -1,0 +1,17 @@
+.merchanTitle {
+    color: white;
+    font-weight: lighter;
+    font-size: 32px;
+    text-align: center;
+}
+
+.merchanImg {
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .merchanImg {
+        width: 100%;
+    }
+}

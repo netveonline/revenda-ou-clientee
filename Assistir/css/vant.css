@@ -1,0 +1,40 @@
+.vantItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 345px;
+}
+
+.vantItem {
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+}
+
+.vantItem img {
+    width: 30px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .vantItemContainer span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .vantItem span {
+        font-size: 12px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .vantItemContainer {
+        width: 100%;
+    }
+    
+    .vantItem img {
+        display: none;
+    }
+    
+}

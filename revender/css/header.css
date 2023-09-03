@@ -1,0 +1,42 @@
+.headerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    padding: .5rem 0;
+}
+
+.headerItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerLink {
+    color: white;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .headerRow {
+        flex-direction: column;
+    }
+
+    .headerItems {
+        flex-direction: column;
+    }
+
+    .headerLinkBorder {
+        border-bottom: 1px solid white;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .headerLink {
+        font-size: 14px;
+    }
+}

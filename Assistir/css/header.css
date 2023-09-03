@@ -1,0 +1,56 @@
+.promotionText {
+    font-size: 190%;
+    color: white;
+    animation: piscapisca 5s infinite;
+    font-weight: bold;
+}
+
+#timer {
+    width: 140px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+}
+
+@keyframes piscapisca {
+    0% { color: yellow;}
+    5% { color: yellow;}
+    10% { color: #7cffd3;}
+    15% { color: #7cffd3;}
+    20% { color: rgb(255, 174, 0);}
+    25% { color: rgb(255, 174, 0);}
+    30% { color: rgb(123, 255, 0);}
+    35% { color: rgb(123, 255, 0);}
+    40% { color: #00ffc8;}
+    45% { color: #00ffc8;}
+    50% { color: rgb(25, 0, 255);}
+    55% { color: rgb(17, 0, 255);}
+    60% { color: rgb(247, 0, 255);}
+    65% { color: rgb(247, 0, 255);}
+    70% { color: rgb(0, 255, 170);}
+    75% { color: rgb(0, 255, 170);}
+    80% { color: rgb(98, 0, 255);}
+    85% { color: rgb(98, 0, 255);}
+    90% { color: #00fff2;}
+    95% { color: #00fff2;}
+    
+}
+
+@media only screen and (max-width: 428px) {
+    .promotionText {
+        font-size: 24px;
+    }
+
+    #timer {
+        width: 100%;
+        max-width: 90px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .promotionText {
+        font-size: 95%;
+    }
+}

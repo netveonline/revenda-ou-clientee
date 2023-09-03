@@ -1,0 +1,149 @@
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.feedbackTitle {
+    font-size: 42px;
+    color: white;
+    font-weight: lighter;
+}
+
+.feedbackText {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.feedbackImgs {
+    display: none;
+}
+
+.feedbackImgs img {
+    height: 80%;
+    width: 100%;
+}
+
+.feedBackBorder {
+    border-right: 1px solid gray;
+}
+
+.fourt-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 70px 10px;
+    background-color:#00040e
+}
+
+
+input[type=radio]{
+    display: none;
+}
+
+.imgc{
+    width: 89%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.container{
+    width: 400px;
+    height: 822px;    
+    display: flex;  
+    transform-style: preserve-3d;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    }
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked ~ .cards #song-1 imgc,
+#item-2:checked ~ .cards #song-2 imgc,
+#item-3:checked ~ .cards #song-3 imgc{
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+@media only screen and (max-width: 1024px) {
+    .fourt-section{
+        display: none;
+    }
+    
+
+    .feedbackImgs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 1800px;
+        margin: 64px auto;
+    }
+
+    .feedBackBorder {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .feedbackImgs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feedBackBorder {
+        border-bottom: 1px solid gray;
+        border-right: none;
+        padding-bottom: 1rem;
+    }
+}

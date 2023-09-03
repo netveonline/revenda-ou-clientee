@@ -1,0 +1,16 @@
+.infoBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.infoText {
+    font-size: 18px;
+    color: white;
+}
+
+.infoBox img {
+    height: 80px;
+}
